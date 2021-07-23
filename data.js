@@ -1,6 +1,6 @@
-//exportamos una constante data de tipo array
+
 export const playstation = [
-    {//los objetos siempre deben tener un id
+    {
         "id": 1,
         "name": "game-1",
         "game": "God Of War",
