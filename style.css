@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+.contenedor > *{
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.contenedor{
+    font-family: 'Lato', sans-serif;
+    background-image: url(./background.jpg);
+    display: grid;
+    gap:5px;
+    grid-template-areas:
+    "header"
+    "main"
+    ;
+}
+
+.encabezado{
+    grid-area: header;
+    text-align: center;
+    
+}
+#navbar {
+    background-color: rgba(19, 192, 192, 0.452);
+    top: 0;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 28px;
+  }
+
+#navbar header{
+    margin-bottom: 30px;
+    color: black;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 4px  black;
+}
+
+#navbar ul {
+    font-size: 16px;
+    border: 1px solid;
+    height: 100px;
+
+    background-color: rgba(253, 88, 83, 0.733);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    text-shadow: 2px 0px white;
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+.principal{
+    grid-area: main;
+    border-top: 2px solid;
+    background-color: rgba(185, 212, 48, 0.849);
+}
+
+#main-doc {
+    padding: 20px;
+    margin-bottom: 5px;
+  }
+  
+  section header{
+    text-shadow: 2px 0px white;
+    border:1px solid black;
+    background-color: rgba(248, 138, 12, 0.74);
+    color:rgb(7, 7, 7);
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align:center;
+    font-size: 2em;
+  }
+
+  section article {
+    text-align:justify;
+    color: #020202;
+    margin: 15px;
+    font-size: 0.96em;
+  }
+  
+  section li {
+    margin: 15px 0px 0px 20px;
+  }
+  
+/*CSS de imagenes cargadas con Java*/
+
+#image{
+    max-width: 100%;
+    width: 150px;
+    margin-left: 25px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.card{
+    padding:2px;
+    display: inline-block;
+}
+
+
+.row{
+    text-align:center;
+    margin: 30px;
+}
+
+h5{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 600px){
+
+    .contenedor{
+        font-size: 22px;
+    }
+
+    .encabezado{
+        position: fixed;
+        max-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+    }
+
+    #navbar ul {
+        height: 202px;
+    }
+    .principal{
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+
+    .psImg{
+        width: 300px;
+    }
+
+    section ul {
+        margin: 15px 0px 0px 20px;
+        text-align:center;
+        list-style: none;
+      }
+    
+    #image{
+        width: 300px;
+    }
+
+    section header{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    h5{
+        font-size: 25px;
+        
+    }
+    
+}

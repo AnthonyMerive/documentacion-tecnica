@@ -11,9 +11,9 @@
 
 <body class="contenedor">
 
-    <nav id="navbar">
+    <nav class="encabezado" id="navbar">
 
-        <header>COLMENA VIDEOGAME'S</header>
+        <header>GUIA DE CONSOLAS</header>
 
         <ul>
             <li><a class="nav-link" href="#playstation">PlayStation</a></li>
@@ -25,7 +25,7 @@
 
     </nav>
 
-    <main id="main-doc">
+    <main class="principal" id="main-doc">
 
         <section class="main-section" id="playstation">
 
@@ -50,7 +50,7 @@
                     compañías tuvieron poco éxito al emplear el CD-ROM como soporte para almacenar juegos. Se estima que
                     en todo el mundo Sony logró vender 104,25 millones de unidades de su videoconsola en 10 años. Fue
                     descontinuada en 2006, y su último título fue FIFA Football 2005.</p>
-
+                <br>
                 <ul>Modelos:
                     <li>PlayStation 1</li>
                     <li>PlayStation 2</li>
@@ -58,10 +58,19 @@
                     <li>PlayStation 4</li>
                     <li>PlayStation 5</li>
                 </ul>
-
-                <code>code 1</code>
-
             </article>
+
+            <code>
+                <div class="row" id="psItems"><h2>Juegos destacados</h2><br></div>
+                <template id="templatePs">
+                    <div class="card">
+                        <h5></h5>
+                        <img id="image" src="" alt="">
+                    </img>
+                    </div>
+                </template>
+            </code>
+
         </section>
 
         <section class="main-section" id="xbox">
@@ -87,22 +96,33 @@
                     con juegos originales de Xbox o Xbox 360 pero durante el E3 de 2015, se anunció la esperada
                     retrocompatibilidad con los juegos de 360. Después en la E3 de 2017, se anunció la
                     retrocompatibilidad con los títulos del Xbox origina</p>
-
+                <br>
                 <ul>Modelos:
                     <li>Xbox</li>
                     <li>Xbox 360</li>
                     <li>Xbox One</li>
                     <li>Xbox series</li>
                 </ul>
-
-                <code>code 2</code>
-
             </article>
+
+            <code>
+                <div class="row" id="xbItems">
+                    <h2>Juegos destacados</h2><br>
+                </div>
+                    <template id="templateXbox">
+                        <div class="card">
+                            <h5></h5>
+                            <img id="image" src="" alt="">
+                            </img>
+                        </div>
+                    </template>
+            </code>
+
         </section>
 
         <section class="main-section" id="nintendo">
 
-            <header><strong>Nintendo</strong></header>
+            <header ><strong>Nintendo</strong></header>
 
             <article>
                 <p>Nintendo Company, Ltd. (任天堂株式会社 Nintendō Kabushiki-gaisha?) es una empresa de entretenimiento
@@ -125,7 +145,7 @@
                     videojuegos,​ entre otros. Asimismo, es una de las empresas japonesas con mayor riqueza y valor
                     en el mercado,​ además de poseer una de las políticas de responsabilidad social con «mejor
                     reputación» en el mundo.​</p>
-
+                <br>
                 <ul>Modelos:
                     <li>Nintendo Entertainment System (NES)</li>
                     <li>Super Nintendo Entertainment System (SNES)</li>
@@ -134,10 +154,21 @@
                     <li>Nintendo WII-U</li>
                     <li>Nintendo Switch</li>
                 </ul>
-
-                <code>code 3</code>
-
             </article>
+
+            <code>
+                <div class="row" id="ntndItems">
+                    <h2>Juegos destacados</h2><br>
+                </div>
+                <template id="templateNtnd">
+                    <div class="card">
+                        <h5></h5>
+                        <img id="image" src="" alt="">
+                        </img>
+                    </div>
+                </template>
+            </code>
+
         </section>
 
         <section class="main-section" id="sega">
@@ -162,17 +193,28 @@
                     Master System, pero tuvo que enfrentarse a competidoras como la NES de Nintendo. En 1984 los
                     ejecutivos de Sega David Rosen y Hayao Nakayama, emprendieron una adquisición por la dirección de la
                     empresa con el respaldo de CSK Corporation.</p>
-
+                <br>
                 <ul>Modelos:
                     <li>Sega Master System</li>
                     <li>Sega Mega Drive</li>
                     <li>Sega Saturn</li>
                     <li>Sega DreamCast</li>
                 </ul>
-
-                <code>code 4</code>
-
             </article>
+
+            <code>
+                <div class="row" id="segaItems">
+                    <h2>Juegos destacados</h2><br>
+                 </div>
+                <template id="templateSega">
+                    <div class="card">
+                        <h5></h5>
+                        <img id="image" src="" alt="">
+                        </img>
+                    </div>
+                </template>
+            </code> 
+
         </section>
 
         <section class="main-section" id="atari">
@@ -195,7 +237,7 @@
                     nombre de GT Interactive. GT Interactive fue adquirido por IESA en 1999 y cambió su nombre a
                     Infogrames Inc. Infogrames adquirió la marca Atari, comprándola a Hasbro Interactive, que a su vez
                     la adquirió de manos de JTS Corporation.</p>
-
+                <br>
                 <ul>Modelos:
                     <li>Atari 2600</li>
                     <li>Atari 5200</li>
@@ -203,14 +245,27 @@
                     <li>Atari Lynx</li>
                     <li>Atari Jaguar</li>
                 </ul>
-
-                <code>code 5</code>
-
             </article>
+
+            <code>
+                <div class="row" id="atariItems">
+                    <h2>Juegos destacados</h2><br>
+                </div>
+                <template id="templateAtari">
+                    <div class="card">
+                        <h5></h5>
+                        <img id="image" src="" alt="">
+                        </img>
+                    </div>
+                </template>
+            </code> 
+
         </section>
 
     </main>
 
+    <script src="./script.js" type="module"></script>
+    <script src="./data.js" type="module"></script>
 </body>
 
 </html>
